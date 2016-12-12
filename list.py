@@ -16,8 +16,11 @@
 # а первый и последний символы этих строк совпадают.
 # Примечание: в python нет оператора ++. Но += сработает.
 def match_ends(words):
-    # +++ ваш код +++
-    return
+    res = 0
+    for word in words:
+        if len(word) >= 2 and word[0] == word[-1]:
+            res += 1
+    return res
 
 
 # B. Начинающиеся с X в начале
