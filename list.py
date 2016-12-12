@@ -31,8 +31,17 @@ def match_ends(words):
 # ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
 # Подсказка: это можно сделать при помощи склеивания 2х заранее отсортированных списков
 def front_x(words):
-    # +++ ваш код +++
-    return
+
+    with_x = []
+    other = []
+
+    for word in sorted(words):
+        if word.startswith('x'):
+            with_x.append(word)
+        else:
+            other.append(word)
+         
+    return with_x + other
 
 
 # C. Сортировка по последнему числу
