@@ -65,8 +65,13 @@ def sort_last(lists):
 # были бы сведены к одному элементу.
 # Таким образом, из [1, 2, 2, 3, 4, 4] получится [1, 2, 3, 4]. 
 def remove_adjacent(nums):
-    # +++ ваш код +++
-    return
+    prev = 0
+    sort_list = []
+    for num in nums:
+        if num != prev:
+            sort_list.append(num)
+            prev = num
+    return sort_list
 
 
 
