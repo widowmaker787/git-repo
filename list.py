@@ -54,8 +54,8 @@ def front_x(words):
 # чтобы получить последний элемент подсписка.
 
 def sort_last(lists):
-    # +++ ваш код +++
-    return
+    res = sorted(lists, key = lambda x: x[-1])
+    return res
 
 
 
